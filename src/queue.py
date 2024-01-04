@@ -42,8 +42,11 @@ class Queue:
 
         :return: данные удаленного элемента
         """
-        removed_value = self.all.pop()
-        return removed_value
+        if self.all:
+            removed_value = self.all.pop(0)
+            return removed_value
+        else:
+            return None
 
     def __str__(self):
         """Магический метод для строкового представления объекта"""
