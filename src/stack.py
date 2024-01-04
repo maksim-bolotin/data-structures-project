@@ -39,3 +39,6 @@ class Stack:
         removed_element = self.all.pop()
         self.top = self.top.next_node
         return removed_element
+
+    def __str__(self):
+        return " "

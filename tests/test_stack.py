@@ -18,3 +18,11 @@ class TestStack(unittest.TestCase):
         self.stack.push(2)
         self.assertEqual(self.stack.pop(), 2)
         self.assertEqual(self.stack.pop(), 1)
+
+    def test__str__(self):
+        """
+        Проверка метода __str__
+        """
+        self.assertEqual(str(self.stack), " ")
+        self.stack.push(1)
+        self.assertEqual(str(self.stack), " ")
