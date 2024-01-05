@@ -16,8 +16,8 @@ class TestStack(unittest.TestCase):
         """
         self.stack.enqueue(1)
         self.stack.enqueue(2)
-        self.assertEqual(self.stack.dequeue(), 2)
         self.assertEqual(self.stack.dequeue(), 1)
+        self.assertEqual(self.stack.dequeue(), 2)
 
     def test__str__(self):
         self.assertEqual(str(self.stack), "")
